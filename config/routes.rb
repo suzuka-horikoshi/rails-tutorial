@@ -14,4 +14,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :password_resets, only: [:new, :create, :edit, :update]
 end
