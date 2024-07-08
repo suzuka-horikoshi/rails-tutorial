@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only: [:create, :destroy]
+  get 'microposts', to: 'static_pages#home'
 end
